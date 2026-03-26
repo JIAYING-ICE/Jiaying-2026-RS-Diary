@@ -1,6 +1,6 @@
 ---
 title: "Sentinel-1 (SAR)"
-subtitle: "<img src='images/Sentinel-1_pillars.png' style='width:600px;'><br/>The European Radar Observatory"
+subtitle: "<img src='images/Sentinel-1_pillars.png' style='width:50px;'><br/>The European Radar Observatory"
 author: "Jaiying LI"
 institute: "CASA0023"
 date: "2026/02/11"
@@ -15,7 +15,7 @@ output:
 ---
 
 layout: true
-<div class="my-header"><img src="images/Sentinel-1_pillars.png" style="width: 150px;" /></div>
+<div class="my-header"><img src="images/Sentinel-1_pillars.png" style="width: 10px;" /></div>
 
 
 ---
