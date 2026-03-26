@@ -4,9 +4,11 @@
     <title>Sentinel-1 (SAR)</title>
     <meta charset="utf-8" />
     <meta name="author" content="Jaiying LI" />
-    <script src="libs/header-attrs-2.30/header-attrs.js"></script>
-    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
-    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
   </head>
   <body>
     <textarea id="source">
@@ -16,7 +18,7 @@ class: center, middle, inverse, title-slide
 # Sentinel-1 (SAR)
 ]
 .subtitle[
-## <img src='images/Sentinel-1_pillars.png' style='width:600px;'><br/>The European Radar Observatory
+## <img src='images/Sentinel-1_pillars.png' style='width:150px;'><br/>The European Radar Observatory
 ]
 .author[
 ### Jaiying LI
@@ -31,13 +33,6 @@ class: center, middle, inverse, title-slide
 ---
 
 
-layout: true
-&lt;div class="my-header"&gt;&lt;img src="images/Sentinel-1_pillars.png" style="width: 150px;" /&gt;&lt;/div&gt;
-
-
----
-fold Panel
-上文下图
 
 # Copernicus: Sentinel-1 — The SAR Imaging Constellation
 
@@ -66,6 +61,73 @@ SAR systems are distinguished in the remote sensing world for their ability to d
 
 image: "D:\0.CASA_USS\Jiaying-2026 portfolio-book\images\week2\SAR.png" [https://gno-sys.com/selecting-your-system-synthetic-aperture-radar-sar-technology/]
 
+
+
+---
+# Copernicus: Sentinel-1 — The SAR Imaging Constellation
+
+.panelset[
+
+.panel[.panel-name[Copernicus Programme]
+
+- **Joint Initiative**: The Sentinel-1 mission is the European Radar Observatory for the Copernicus initiative, a collaboration between the **European Commission (EC)** and the **European Space Agency (ESA)**.
+- **Core Objective**: Copernicus is designed to implement **information services** for environmental monitoring and security.
+- **Data Integration**: It relies on a combination of **Earth Observation satellites** (Sentinels) and ground-based (in-situ) information.
+
+.center[
+&lt;img src="images/Copernicus Programme.png" style="width: 50%; border-radius: 10px; shadow: 5px;" /&gt;
+&lt;p style="font-size: 10px; color: grey;"&gt;[Credits: ESA]. Source: Copernicus SentiWiki (2024).&lt;/p&gt;
+]
+]
+
+.panel[.panel-name[Sentinel-1 Mission]
+
+- **The Fleet**: A constellation of **twin satellites** (Sentinel-1A &amp; 1B) designed for the Copernicus program.
+- **Sensor Technology**: Each carries a **C-band Synthetic Aperture Radar (SAR)**.
+- **Key Capabilities**: 
+    - Provides **all-weather, day-and-night** imagery.
+    - **Revisit Time**: The twins orbit 180° apart, imaging the entire Earth every **six days**.
+- **Launch History**: S1A launched in April 2014; S1B followed in April 2016.
+
+.center[
+&lt;img src="images/Artist's view of the deployed Sentinel-1 spacecraft.jpeg" style="width: 45%;" /&gt;
+&lt;p style="font-size: 10px; color: grey;"&gt;Artist's view of the deployed Sentinel-1 spacecraft. Image Credit: ESA/TAS-I. Source: NASA Earthdata (2023).&lt;/p&gt;
+]
+]
+
+.panel[.panel-name[SAR Technology]
+
+- **Active Sensing**: Unlike passive systems (optical), SAR **produces its own energy** and measures the reflected signals (backscatter) from the Earth's surface.
+- **Operational Advantage**: This "active" nature allows SAR to **overcome low visibility** and **adverse weather** (clouds, fog, rain).
+- **High Resolution**: Delivers clear, high-resolution images in any environment, making it vital for defense and environmental science.
+
+.center[
+&lt;img src="images/SAR.png" style="width: 50%;" /&gt;
+&lt;p style="font-size: 10px; color: grey;"&gt;SAR active microwave sensing mechanism. Source: Gnosys Technology (2023).&lt;/p&gt;
+]
+]
+
+]
+
+&lt;style&gt;
+/* 重点内容加粗样式 */
+b, strong {
+  color: #005587; /* 使用深蓝色标注重点 */
+}
+
+/* Panelset 选项卡样式自定义 */
+.panelset {
+   --panel-tab-foreground: #666;
+   --panel-tab-active-foreground: #005587;
+   --panel-tab-active-border-color: #005587;
+   --panel-tab-hover-border-color: #007bc3;
+}
+
+.panel-panel {
+    line-height: 1.6;
+    font-size: 0.9em;
+}
+&lt;/style&gt;
 
 ---
 
