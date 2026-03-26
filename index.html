@@ -34,36 +34,78 @@ class: center, middle, inverse, title-slide
 
 
 
-# Copernicus: Sentinel-1 — The SAR Imaging Constellation
+&lt;style&gt;
 
-### What is Copernicus Programme?
-The Sentinel-1 mission is the European Radar Observatory for the Copernicus joint initiative of the European Commission (EC) and the European Space Agency (ESA). Copernicus is a European initiative to implement information services dealing with the environment and security based on observation data from Earth Observation satellites and ground-based information.
-[https://sentiwiki.copernicus.eu/web/s1-mission#Sentinel-1-Mission]
+strong, b {
+color: #005587;
+}
 
-image: "D:\0.CASA_USS\Jiaying-2026 portfolio-book\images\week2\Copernicus Programme.png"  [[Credits: ESA]:https://sentiwiki.copernicus.eu/web/copernicus-programme ]
-
-### What is Sentinel-1?
-
-The Sentinels are a fleet of European Space Agency (ESA) satellites designed to acquire measurements from multiple sensor types that will provide information necessary to meet Europe's Copernicus program objectives. 
-
-The first mission in the series, the Sentinel-1 constellation, includes twin satellites that each carry C-band synthetic aperture radar (SAR) and together provide all-weather, day-and-night imagery of Earth's surface. Sentinel-1A was launched on April 3, 2014, and Sentinel-1B on 25 April 2016. They orbit 180° apart, together imaging the Earth every six days.
-
-[https://www.earthdata.nasa.gov/data/platforms/space-based-platforms/sentinel-1]
-
-image: "D:\0.CASA_USS\Jiaying-2026 portfolio-book\images\week2\Artist's view of the deployed Sentinel-1 spacecraft.jpeg" [image credit: ESA, TAS-I https://www.eoportal.org/satellite-missions/copernicus-sentinel-1#copernicus-sentinel-1--the-sar-imaging-constellation-for-land-and-ocean-services]
-
-### What is SAR?
+.panelset {
+--panel-tab-font-size: 0.6em;
+--panel-tab-active-foreground: #005587;
+--panel-tab-active-border-color: #005587;
+--panel-tab-hover-border-color: #007bc3;
+--panel-tab-font-family: "Arial", sans-serif;
+}
 
 
-SAR systems are distinguished in the remote sensing world for their ability to deliver clear, high-resolution images in any environment. Unlike passive systems, SAR is an “active” sensing technology, meaning it produces its own energy and measures the reflected signals back from the Earth’s surface. This allows SAR to overcome limitations such as low visibility and adverse weather, making it a powerful tool for diverse industries, from environmental science to defense. 
+.panel-panel table {
+font-size: 0.65em;
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+margin-bottom: 10px;
+}
 
-[https://gno-sys.com/selecting-your-system-synthetic-aperture-radar-sar-technology/]
+.panel-panel th {
+border-bottom: 2px solid #005587;
+color: #005587;
+padding: 10px;
+text-align: left;
+}
 
-image: "D:\0.CASA_USS\Jiaying-2026 portfolio-book\images\week2\SAR.png" [https://gno-sys.com/selecting-your-system-synthetic-aperture-radar-sar-technology/]
+.panel-panel td {
+padding: 20px;
+border-bottom: 1px solid #eee;
+}
 
 
+a {
+color: #007bc3;
+text-decoration: none;
+}
 
----
+a:hover {
+text-decoration: underline;
+}
+
+
+.remark-slide-content {
+font-size: 20px;
+padding: 1em 2em 1em 2em;
+}
+
+.left-60 {
+  float: left;
+  width: 60%;
+}
+
+.right-40 {
+  float: right;
+  width: 38%;
+}
+
+.remark-slide-content::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+strong, b {
+  color: #005587;
+}
+&lt;/style&gt;
+
 # Copernicus: Sentinel-1 — The SAR Imaging Constellation
 
 .panelset[
@@ -75,8 +117,13 @@ image: "D:\0.CASA_USS\Jiaying-2026 portfolio-book\images\week2\SAR.png" [https:/
 - **Data Integration**: It relies on a combination of **Earth Observation satellites** (Sentinels) and ground-based (in-situ) information.
 
 .center[
-&lt;img src="images/Copernicus Programme.png" style="width: 50%; border-radius: 10px; shadow: 5px;" /&gt;
-&lt;p style="font-size: 10px; color: grey;"&gt;[Credits: ESA]. Source: Copernicus SentiWiki (2024).&lt;/p&gt;
+&lt;a href="https://sentiwiki.copernicus.eu/web/copernicus-programme"&gt;
+  &lt;img src="images/Copernicus Programme.png" style="width: 35%; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2);" /&gt;
+&lt;/a&gt;
+&lt;p style="font-size: 10px; color: grey;"&gt;
+  [Credits: &lt;a href="https://sentiwiki.copernicus.eu/web/copernicus-programme"&gt;ESA&lt;/a&gt;]. 
+  Source: &lt;a href="https://sentiwiki.copernicus.eu/web/s1-mission#Sentinel-1-Mission"&gt;Copernicus SentiWiki (2024)&lt;/a&gt;.
+&lt;/p&gt;
 ]
 ]
 
@@ -90,8 +137,13 @@ image: "D:\0.CASA_USS\Jiaying-2026 portfolio-book\images\week2\SAR.png" [https:/
 - **Launch History**: S1A launched in April 2014; S1B followed in April 2016.
 
 .center[
-&lt;img src="images/Artist's view of the deployed Sentinel-1 spacecraft.jpeg" style="width: 45%;" /&gt;
-&lt;p style="font-size: 10px; color: grey;"&gt;Artist's view of the deployed Sentinel-1 spacecraft. Image Credit: ESA/TAS-I. Source: NASA Earthdata (2023).&lt;/p&gt;
+&lt;a href="https://www.eoportal.org/satellite-missions/copernicus-sentinel-1#copernicus-sentinel-1--the-sar-imaging-constellation-for-land-and-ocean-services"&gt;
+  &lt;img src="images/Artist's view of the deployed Sentinel-1 spacecraft.jpeg" style="width: 28%;" /&gt;
+&lt;/a&gt;
+&lt;p style="font-size: 10px; color: grey;"&gt;
+  Artist's view of S1 spacecraft. Image Credit: &lt;a href="https://www.eoportal.org/satellite-missions/copernicus-sentinel-1"&gt;ESA/TAS-I&lt;/a&gt;. 
+  Source: &lt;a href="https://www.earthdata.nasa.gov/data/platforms/space-based-platforms/sentinel-1"&gt;NASA Earthdata (2023)&lt;/a&gt;.
+&lt;/p&gt;
 ]
 ]
 
@@ -102,146 +154,280 @@ image: "D:\0.CASA_USS\Jiaying-2026 portfolio-book\images\week2\SAR.png" [https:/
 - **High Resolution**: Delivers clear, high-resolution images in any environment, making it vital for defense and environmental science.
 
 .center[
-&lt;img src="images/SAR.png" style="width: 50%;" /&gt;
-&lt;p style="font-size: 10px; color: grey;"&gt;SAR active microwave sensing mechanism. Source: Gnosys Technology (2023).&lt;/p&gt;
+&lt;a href="https://gno-sys.com/selecting-your-system-synthetic-aperture-radar-sar-technology/"&gt;
+  &lt;img src="images/SAR.png" style="width: 12%;" /&gt;
+&lt;/a&gt;
+&lt;p style="font-size: 10px; color: grey;"&gt;
+  SAR active microwave sensing mechanism. 
+  Source: &lt;a href="https://gno-sys.com/selecting-your-system-synthetic-aperture-radar-sar-technology/"&gt;Gnosys Technology (2023)&lt;/a&gt;.
+&lt;/p&gt;
 ]
 ]
 
+]
+
+---
+# Sentinel-1 Radar Mission
+
+.pull-left[
+
+.panelset[
+
+.panel[.panel-name[Mission Overview]
+
+- **Deployment**: Sentinel-1 unfolds its **10-meter long solar wings** and radar antenna in a "carefully designed choreography" after separating from the Soyuz launcher [00:00:12].
+- **Active Sensing**: As an **active system**, it illuminates the Earth with radar waves, enabling it to **see through clouds and rain**, regardless of day or night [00:00:33].
+- **Efficiency**: A single pass can collect data across a swath of **250 to 400 km**, mapping the world at unprecedented speed and resolution [00:01:39].
+]
+
+
+.panel[.panel-name[Key Applications]
+
+- **Emergency Management**: Critical for rapid response during **floods and earthquakes**, and detecting millimetric changes in volcanic activity [00:00:56].
+- **Maritime Services**: Enhances global **ship traffic monitoring** and assists icebreakers in identifying safe navigation routes [00:01:12].
+- **Operational Continuity**: Part of the **Copernicus program**, ensuring long-term, timely, and easy access to high-quality radar data [00:01:54].
+]
+]
+]
+
+.pull-right[
+### Video Presentation
+&lt;div class="video-container"&gt;
+  &lt;iframe src="https://www.youtube.com/embed/FJWzLxdSMyA?start=2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p style="font-size: 10px; color: grey; margin-top: 10px;"&gt;
+  Source: &lt;a href="https://www.youtube.com/watch?v=FJWzLxdSMyA"&gt;ESA - Sentinel-1: Radar mission (2014)&lt;/a&gt;
+&lt;/p&gt;
 ]
 
 &lt;style&gt;
-/* 重点内容加粗样式 */
-b, strong {
-  color: #005587; /* 使用深蓝色标注重点 */
+/* Applying your preferred bold style */
+strong, b {
+  color: #005587;
 }
 
-/* Panelset 选项卡样式自定义 */
-.panelset {
-   --panel-tab-foreground: #666;
-   --panel-tab-active-foreground: #005587;
-   --panel-tab-active-border-color: #005587;
-   --panel-tab-hover-border-color: #007bc3;
+/* Responsive video container for 16:9 ratio */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
 }
 
-.panel-panel {
-    line-height: 1.6;
-    font-size: 0.9em;
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
 }
 &lt;/style&gt;
 
 ---
-
-# Sentinel-1 Radar Mission
-
-[https://www.youtube.com/watch?v=FJWzLxdSMyA&amp;t=2s]
----
-
 # Mission Profile
 
-上 panel + table 
+.pull-left[
+.panelset[
+
+.panel[.panel-name[Info]
+
+| Attribute | Details |
+| :--- | :--- |
+| **Mission Name** | Copernicus Sentinel-1 (S1A, S1B, S1C, S1D) |
+| **Agency** | **ESA**; European Commission (COM) |
+| **Status** | **Operational** (S1A: Extended; S1B: Ended; S1C: Commissioning) |
+| **Launch Dates** | S1A: Apr 2014 \ S1B: Apr 2016 \ S1C: Dec 2024 |
+| **Design Life** | **7.25 Years** (Consumables for 12 years) |
+
+]
+
+.panel[.panel-name[Specifications]
+
+| Attribute | Details |
+| :--- | :--- |
+| **Resolution** | 5 x 5 m, 5 x 20 m, and 25 x 40 m |
+| **Spectral** | **C-band** (5.405 GHz) |
+| **Mass** | ~2,300 kg (at launch) |
+| **Data Policy** | **Free, Full, and Open** (Copernicus) |
+
+]
+
+.panel[.panel-name[Orbits]
+
+| Attribute | Details |
+| :--- | :--- |
+| **Orbit Type** | **Sun-synchronous**, Near-polar |
+| **LTAN** | Dawn-dusk (18:00) |
+| **Altitude** | 693 km |
+| **Inclination** | 98.18° |
+| **Repeat Cycle** | 12 days (Single); **6 days** (Constellation) |
+
+]
+
+.panel[.panel-name[Instruments]
+
+| Attribute | Details |
+| :--- | :--- |
+| **Primary** | **C-SAR** (Synthetic Aperture Radar) |
+| **Frequency** | 5.405 GHz |
+| **Polarization** | Single (HH, VV) &amp; **Dual** (HH+HV, VV+VH) |
+
+]
+]
+]
+
+.pull-right[
+.center[
+&lt;a href="https://sentiwiki.copernicus.eu/web/s1-mission" target="_blank"&gt;
+  &lt;img src="images/orbit.png" style="width: 40%; border-radius: 5px; box-shadow: 0px 2px 5px rgba(0,0,0,0.2);" /&gt;
+&lt;/a&gt;
+&lt;p style="font-size: 10px; color: grey;"&gt;Sentinel-1 Constellation [Credits: &lt;a href="https://sentiwiki.copernicus.eu/web/s1-mission"&gt;ESA/ATG medialab&lt;/a&gt;]&lt;/p&gt;
 
 
-## Info
-Mission Name,"Copernicus Sentinel-1 (Constellation of S1A, S1B, S1C, S1D)"
-Agency,ESA; COM
-Mission Status,Operational (S1A: Extended; S1B: Ended; S1C: Launched/Commissioning)
-Launch Dates,S1A: Apr 2014 | S1B: Apr 2016 | S1C: Dec 2024
-Design Life,7.25 Years (with consumables for 12 years)
-
-## Specifications
-
-Resolution
-25 x 40 m, 5 x 5 m, and 5 x 20 m
-
-Spectral
-1 nm-180nm
-
-## Orbits
-Orbit Type,"Sun-synchronous, Near-polar, Dawn-dusk (18:00 LTAN)"
-Orbit Altitude,693 km
-Inclination,98.18°
-Repeat Cycle,12 days (per satellite); 6 days (combined constellation)
-
-## Instruments
-Primary Instrument,C-SAR (C-band Synthetic Aperture Radar)
-Center Frequency,5.405 GHz (C-band)
-Polarization,"Single (HH, VV) &amp; Dual (HH+HV, VV+VH)"
-Mass,"~2,300 kg (at launch)"
-Data Policy,"Free, Full, and Open (Copernicus Data Policy)"
-
-下图：
-
-image 1： Schematic View of the Deployed Sentinel-1 Spacecraft. [Credits: TAS-I]  "D:\0.CASA_USS\Jiaying-2026 portfolio-book\images\week2\schematic View of the Deployed Sentinel-1 Spacecraft.png" [https://sentiwiki.copernicus.eu/web/s1-mission#Sentinel-1-Mission]
-
-
-image 2：Sentinel-1 Constellation [Credits: ESA/ATG medialab] "D:\0.CASA_USS\Jiaying-2026 portfolio-book\images\week2\orbit.png" [https://sentiwiki.copernicus.eu/web/s1-mission]
-
-
-
+&lt;a href="https://sentiwiki.copernicus.eu/web/s1-mission#Sentinel-1-Mission" target="_blank"&gt;
+  &lt;img src="images/schematic View of the Deployed Sentinel-1 Spacecraft.png" style="width: 80%; border-radius: 5px; box-shadow: 0px 2px 5px rgba(0,0,0,0.2);" /&gt;
+&lt;/a&gt;
+&lt;p style="font-size: 10px; color: grey;"&gt;Schematic View of Deployed S-1 [Credits: &lt;a href="https://sentiwiki.copernicus.eu/web/s1-mission#Sentinel-1-Mission"&gt;TAS-I&lt;/a&gt;]&lt;/p&gt;
+]
+]
 
 ---
-
 # Technical Specifications - Sensor Modes
 
-Copernicus Sentinel-1 operates in four exclusive acquisition modes:
+Copernicus Sentinel-1 operates in **four exclusive acquisition modes** to balance swath width and resolution:
 
 
-table:
-Mode,Swath Width,Resolution (Rg x Az),Primary Use Case
-IW (Interferometric Wide Swath),250 km,5 x 20 m,Main operational mode over land; InSAR.
-EW (Extra Wide Swath),400 km,20 x 40 m,"Maritime surveillance, sea-ice, and polar zones."
-SM (Stripmap),80 km,5 x 5 m,High-resolution for emergency/special cases.
-WV (Wave),20 x 20 km,5 x 5 m,Sampled every 100km for ocean wind/waves.
 
-Stripmap (SM)
-Interferometric Wide swath (IW) - this is the main data acquisition mode of Sentinel-1, TOPSAR (Terrain Observation with Progressive Scans SAR)
-Extra-Wide swath (EW)
+| Mode | Swath | Res (Rg x Az) | Primary Use Case |
+| :--- | :--- | :--- | :--- |
+| **IW** (Interferometric Wide) | 250 km | 5 x 20 m | **Main land mode**; InSAR. |
+| **EW** (Extra Wide Swath) | 400 km | 20 x 40 m | Maritime, sea-ice, polar. |
+| **SM** (Stripmap) | 80 km | 5 x 5 m | High-res emergency cases. |
+| **WV** (Wave) | 20 x 20 km | 5 x 5 m | Ocean wind/waves (sampled). |
 
-image: Overview of the Sentinel-1 C-SAR instrument observation scheme and operational support modes (image credit: ESA) "D:\0.CASA_USS\Jiaying-2026 portfolio-book\images\week2\modes.jpeg" [https://www.eoportal.org/satellite-missions/copernicus-sentinel-1#c-sar-c-band-sar-instrument]
+
+.center[
+&lt;a href="https://www.eoportal.org/satellite-missions/copernicus-sentinel-1#c-sar-c-band-sar-instrument" target="_blank"&gt;
+  &lt;img src="images/modes.jpeg" style="width: 26%; border-radius: 8px; box-shadow: 2px 2px 12px rgba(0,0,0,0.15);" /&gt;
+&lt;/a&gt;
+&lt;p style="font-size: 10px; color: grey; margin-top: 15px;"&gt;
+  Overview of Sentinel-1 C-SAR observation scheme. &lt;br/&gt; Image credit: &lt;a href="https://www.eoportal.org/satellite-missions/copernicus-sentinel-1"&gt;ESA / eoPortal&lt;/a&gt;
+&lt;/p&gt;
+]
 
 
 ---
 # Mechanisms - SAR
 
-panel， image相应变换
+&lt;style&gt;
 
-## Active sensing
+.panel-panel {
+  position: relative;
+  height: 400px; 
+}
 
-A sensor can be classified as either passive or active. A passive sensor, using optical systems, records electromagnetic waves emitted by the sun and reflected from the ground surface. An active sensor, used by SAR systems, functions as both the source and the receiver. This means the sensor transmits the electromagnetic waves and also records the reflected waves. Unlike an optical sensor, a SAR sensor can operate during the day or night, independent of the sun, since it transmits its own signal.
+.panel-content-text {
+  width: 58%;
+  float: left;
+}
 
-image: An optical sensor (left) only works with clear, sunny skies. A SAR sensor (right) can work day and night, and even when clouds are present. "D:\0.CASA_USS\Jiaying-2026 portfolio-book\images\week2\active.png" [https://pro.arcgis.com/en/pro-app/latest/help/analysis/image-analyst/introduction-to-synthetic-aperture-radar.htm]
+.panel-content-image {
+  width: 38%;
+  float: right;
+  text-align: center;
+}
 
-## Polarization
+strong, b { color: #005587; }
 
-SAR transmits electromagnetic waves; the orientation of an electromagnetic wave is called polarisation. Every electromagnetic wave consists of electric and magnetic fields. Horizontal polarisation is denoted as H and vertical polarisation is denoted as V. There are four common polarisation combinations used in SAR sensors: 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+&lt;/style&gt;
 
-HH: Sensor transmits a horizontal signal and receives a horizontal signal. 
-VV: Sensor transmits a vertical signal and receives a vertical signal. 
-HV: Sensor transmits a horizontal signal and receives a vertical signal. 
-VH: Sensor transmits a vertical signal and receives a horizontal signal. 
+.panelset[
 
-Vertical polarisation is used to detect elevated objects, such as buildings, rough sea or transmission towers. Horizontal polarisation is more suitable for flat and low surfaces – rivers, bridges, or for example power lines. 
+.panel[.panel-name[Active Sensing]
+.panel-content-text[
+### Active vs. Passive Sensing
+- **Passive**: Records solar radiation reflected from the ground.
+- **Active (SAR)**: Functions as both **source and receiver**.
+- **Advantage**: Operates **day/night** and penetrates clouds/fog.
+]
+.panel-content-image[
+&lt;a href="https://pro.arcgis.com/en/pro-app/latest/help/analysis/image-analyst/introduction-to-synthetic-aperture-radar.htm" target="_blank"&gt;
+  &lt;img src="images/active.png" style="width: 100%; border-radius: 8px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);" /&gt;
+&lt;/a&gt;
+&lt;p style="font-size: 8px; color: grey;"&gt;Active vs Passive. Source: ArcGIS Pro.&lt;/p&gt;
+]
+]
 
+.panel[.panel-name[Polarization]
+.panel-content-text[
+### Signal Orientation
+- **Single Pol**: HH or VV.
+- **Cross Pol**: HV or VH.
+- **Vertical (V)**: Detects **elevated objects** (buildings, rough seas).
+- **Horizontal (H)**: Suitable for **flat surfaces** (rivers).
+]
+.panel-content-image[
+&lt;a href="https://pro.arcgis.com/en/pro-app/latest/help/analysis/image-analyst/introduction-to-synthetic-aperture-radar.htm" target="_blank"&gt;
+  &lt;img src="images/Polarization.png" style="width: 100%; border-radius: 8px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);" /&gt;
+&lt;/a&gt;
+&lt;p style="font-size: 8px; color: grey;"&gt;SAR Polarization. Source: ArcGIS Pro.&lt;/p&gt;
+]
+]
 
-image："D:\0.CASA_USS\Jiaying-2026 portfolio-book\images\week2\Polarization.png"[https://pro.arcgis.com/en/pro-app/latest/help/analysis/image-analyst/introduction-to-synthetic-aperture-radar.htm]
+.panel[.panel-name[Spatial Resolution]
+.panel-content-text[
+### Synthetic Aperture
+- **Concept**: A short antenna mimics a **kilometers-long** one.
+- **Mechanism**: Signal processing **synthetically elongates** the antenna.
+]
+.panel-content-image[
+&lt;a href="https://pro.arcgis.com/en/pro-app/latest/help/analysis/image-analyst/introduction-to-synthetic-aperture-radar.htm" target="_blank"&gt;
+  &lt;img src="images/GUID-9D716342-931F-4B75-B896-9ECE1FF68719-web.gif" style="width: 80%; border-radius: 8px;" /&gt;
+&lt;/a&gt;
+&lt;p style="font-size: 8px; color: grey;"&gt;Synthetic Aperture formation. Source: ArcGIS Pro.&lt;/p&gt;
+]
+]
 
-## Spatial resolution
-
-As the satellite orbits the earth, the sensor images the ground multiple times. Combining this with signal processing techniques allows a SAR sensor (with a short antenna) to synthetically elongate its antenna to get a larger aperture.
-
-image："D:\0.CASA_USS\Jiaying-2026 portfolio-book\images\week2\GUID-9D716342-931F-4B75-B896-9ECE1FF68719-web.gif" [https://pro.arcgis.com/en/pro-app/latest/help/analysis/image-analyst/introduction-to-synthetic-aperture-radar.htm]
+] .clearfix[]
 
 ---
 # Comparison - Optical and SAR
-Feature,Optical Imagery,SAR Imagery
-Energy Source,Passive (Relies on Sunlight),Active (Emits its own Radar pulses)
-Illumination,Requires daylight,Works 24/7 (Day and Night)
-Atmospheric Effect,"Blocked by clouds, smoke, and haze","Penetrates clouds, smoke, and light rain"
-Image Basis,Reflectance of visible/infrared light,Backscatter of microwave energy
-Image： Color, size, number, form, etc., of the object ；Structure and material of target objects
-    (artifacts/natural objects)
 
-image: SAR vs Optical satellites. Source: [https://www.youtube.com/watch?v=ecfkPuSe45Y] "D:\0.CASA_USS\Jiaying-2026 portfolio-book\images\week2\sar_optical.png"
+.left-60[
+
+&lt;br&gt;
+
+| Feature | Optical Imagery | SAR Imagery |
+| :--- | :--- | :--- |
+| **Energy Source** | **Passive** (Sunlight) | **Active** (Radar pulses) |
+| **Illumination** | Requires daylight | **Works 24/7** |
+| **Atmospheric** | Blocked by clouds/smoke | **Penetrates** clouds/rain |
+| **Image Basis** | Reflectance (Vis/IR) | Backscatter (Microwave) |
+| **Interpretation** | **Visual Traits**: Color, size, form. | **Physical**: Structure, material. |
+
+
+]
+
+.right-40[
+&lt;br&gt;
+.center[
+&lt;a href="https://www.youtube.com/watch?v=ecfkPuSe45Y" target="_blank"&gt;
+  &lt;img src="images/sar_optical.png" style="width: 100%; border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.2);" /&gt;
+&lt;/a&gt;
+&lt;p style="font-size: 9px; color: grey; margin-top: 10px;"&gt;
+  Conceptual Comparison: SAR vs. Optical. &lt;br/&gt; Source: &lt;a href="https://www.youtube.com/watch?v=ecfkPuSe45Y"&gt;Everything Earth Observation&lt;/a&gt;
+&lt;/p&gt;
+]
+]
+
+.clearfix[]
 
 
 ---
@@ -267,13 +453,15 @@ image: SAR vs Optical satellites. Source: [https://www.youtube.com/watch?v=ecfkP
 ]
 
 
-* **Copernicus SentiWiki**: [Sentinel-1 Applications Guide](https://sentiwiki.copernicus.eu/web/s1-applications)
-* **Scientific Data**: Bauer-Marschallinger, B., Cao, S., Navacchi, C. et al. *The normalised Sentinel-1 Global Backscatter Model, mapping Earth’s land surface with C-band microwaves*. Sci Data 8, 277 (2021). [https://doi.org/10.1038/s41597-021-01059-7](https://doi.org/10.1038/s41597-021-01059-7)
+.footnote[
+[1] Bauer-Marschallinger, B., et al. (2021). [The normalised Sentinel-1 Global Backscatter Model...](https://doi.org/10.1038/s41597-021-01059-7) *Sci Data* 8, 277.  
+[2] ESA, [Sentinel-1 Applications Guide](https://sentiwiki.copernicus.eu/web/s1-applications). *Copernicus SentiWiki*.
+]
 
 
 &lt;style&gt;
 .scroll-box {
-height: 450px;
+height: 420px;
 overflow-y: scroll;
 display: block;
 }
@@ -281,42 +469,66 @@ display: block;
 .scroll-box table {
 width: 100%;
 }
+.footnote {
+  font-size: 0.8em;
+  color: #777;
+  position: absolute;
+  bottom: 1em;
+  left: 2em;
+}
 &lt;/style&gt;
 
+
 ---
-# Reflection - Advantages and limitations of SAR imagery
+# Reflection: SAR Pros, Cons &amp; Integration
+
+.left-60[
+.panelset[
+.panel[.panel-name[Advantages]
+- **All-weather &amp; 24/7**: Penetrates clouds, smoke, and rain; independent of solar illumination.
+- **Material Penetration**: Microwaves can "see through" foliage and dry soil to reveal subsurface structures.
+- **High Dynamics**: Achieves up to **25cm resolution** with frequent revisits, ideal for urban expansion monitoring.
+]
+
+.panel[.panel-name[Limitations]
+- **Speckle Noise**: Inherently affected by "salt and pepper" graininess, complicating fine-feature classification.
+- **Technical Complexity**: Requires specialized processing for geometric and radiometric calibration.
+- **Non-Intuitive**: Backscatter is sensitive to **roughness and moisture** (dielectric), not color, making visual interpretation harder.
+]
 
 
-Advantages
-All-weather capability: As an active sensor operating in the microwave spectrum, SAR can penetrate clouds, smoke, rain, and fog to provide reliable data
-.
-Day-and-night operation: It provides its own energy source, enabling consistent Earth observation regardless of solar illumination
-.
-Material penetration: Microwaves can penetrate through foliage and dry soil to reveal underlying structures
-.
-High spatial resolution and revisit rates: Modern SAR can achieve resolutions down to 25cm and frequent revisits, which is critical for monitoring rapid changes like urban expansion
-.
+.panel[.panel-name[Future Integration] 
+- **Complementary Nature**: It’s not SAR *vs.* Optical; they are **complementary**. Combining SAR's structural data with Optical's spectral detail provides the most robust monitoring solution.
+- **GIS Integration**: Adding GIS layers (land cover, boundaries) provides the necessary **spatial context** to turn radar backscatter into actionable intelligence.
+]
+]
+]
+
+.right-40[
+
+&lt;br&gt;
+.center[
+&lt;a href="https://elisecolin.medium.com/why-a-sar-image-is-not-your-usual-optical-one-2ee3f199c5ef" target="_blank"&gt;
+  &lt;img src="images/imagesar.png" style="width: 100%; border-radius: 8px; box-shadow: 0px 4px 12px rgba(0,0,0,0.2);" /&gt;
+&lt;/a&gt;
+&lt;p style="font-size: 8px; color: grey; margin-top: 10px;"&gt;
+  Spatial Resolution vs. Pixel Size in SAR. &lt;br/&gt; Source: &lt;a href="https://elisecolin.medium.com/why-a-sar-image-is-not-your-usual-optical-one-2ee3f199c5ef"&gt;Elise Colin (Medium)&lt;/a&gt;
+&lt;/p&gt;
+]
+]
 
 
-Limitations
-High technical complexity: Processing SAR data requires specialized software and expertise due to its unique geometric and physical properties
-.
-Speckle noise: SAR imagery is inherently affected by grainy "salt and pepper" noise, which can obscure fine details and complicate classification
-.
-Physical sensitivity: Backscatter intensity is highly sensitive to surface roughness and moisture content (dielectric constant) rather than traditional color
-.
-Lack of intuitive visualization: The resulting grayscale imagery is not as visually interpretable as optical data and often requires background context to identify features
-.
+&lt;style&gt;
+.left-60 { float: left; width: 60%; }
+.right-40 { float: right; width: 38%; }
+.remark-slide-content strong { color: #005587; }
+.panel-panel { font-size: 0.8em; line-height: 1.6; }
+.footnote { font-size: 0.5em; color: #777; position: absolute; bottom: 1.5em; left: 3em; }
+.clearfix::after { content: ""; clear: both; display: table; }
+&lt;/style&gt;
 
-
-Reflection
-Combining SAR and optical imagery
-While SAR images can see through clouds and provide valuable information about the surface characteristics, optical imagery brings clearer details and colours. However, this doesn’t mean you have to choose between SAR and optical imagery. It’s not one or the other – they are perfectly complementary and the combination of both will provide you with the unique possibility to monitor areas of your interested under all conditions and with the highest amount of detail available. 
-
-GIS layers
-GIS layers are digital representations of geographic features used in Geographic Information Systems (GIS) for spatial analysis. When integrated with SAR, GIS layers provide contextual information such as land cover types, infrastructure, and boundaries, making the interpretation and analysis of radar data easier and more accurate.  
-
-image：Same spatial resolution….for different pixel sizes "D:\0.CASA_USS\Jiaying-2026 portfolio-book\images\week2\imagesar.png" [https://elisecolin.medium.com/why-a-sar-image-is-not-your-usual-optical-one-2ee3f199c5ef]
+.clearfix[]
+---
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
